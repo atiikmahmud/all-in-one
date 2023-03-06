@@ -23,6 +23,12 @@ function atik_css_js_file_calling()
 }
 add_action('wp_enqueue_scripts', 'atik_css_js_file_calling');
 
+# Google Font
+function ali_add_google_fonts(){
+    wp_enqueue_style('ali_google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'ali_add_google_fonts');
+
 # Theme Function
 function atik_customizar_register($wp_customize)
 {
@@ -41,8 +47,10 @@ function atik_customizar_register($wp_customize)
         'setting' => 'atik_logo',
         'section' => 'atik_header_area',
     ) ));
-} 
-
+}
 add_action('customize_register', 'atik_customizar_register');
+
+# Nav Menu Register
+register_nav_menu('main_menu', __('Main Menu', 'all-in-one'));
 
 ?>
