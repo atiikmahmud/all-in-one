@@ -71,6 +71,23 @@ function atik_customizar_register($wp_customize)
             'center_menu'   => 'Center Menu'
         ),
     ));
+
+    # Footer Option
+    $wp_customize->add_section('atik_footer_option', array(
+        'title'          => __('Footer Option', 'all-in-one'),
+        'description'    => 'If you interested to change or update your footer settings you can do it .'
+     ));
+ 
+     $wp_customize->add_setting('atik_copyright_section', array(
+         'default'       => '&copy; Copyroght 2023 | All in one',
+     ));
+ 
+     $wp_customize->add_control('atik_copyright_section', array(
+         'label'         => 'Copyright Text',
+         'description'   => 'If need you can update your copyright text from here.',
+         'setting'       => 'atik_copyright_section',
+         'section'       => 'atik_footer_option',
+     ));
 }
 add_action('customize_register', 'atik_customizar_register');
 
