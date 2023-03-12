@@ -18,7 +18,7 @@ function atik_css_js_file_calling()
 add_action('wp_enqueue_scripts', 'atik_css_js_file_calling');
 
 # Google Font
-function ali_add_google_fonts(){
-    wp_enqueue_style('ali_google_fonts', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap', false);
+function atik_add_google_fonts(){
+    wp_enqueue_style('atik_google_fonts', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap', false);
 }
-add_action('wp_enqueue_scripts', 'ali_add_google_fonts');
+add_action('wp_enqueue_scripts', 'atik_add_google_fonts');
