@@ -167,8 +167,6 @@ input[type="submit"].submit:hover {
 ========================================*/
 #body_area {
   padding: 45px 0;
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;  
 }
 #body_area .blog_area {
   width: 100%;
@@ -209,7 +207,6 @@ input[type="submit"].submit:hover {
   color: #262626;
   text-decoration: none;
   transition: 0.5s;
-  word-wrap: break-word;
 }
 #body_area .post_details h2 a:hover {
   color: #ea1a70;
@@ -218,15 +215,70 @@ input[type="submit"].submit:hover {
 /*===========================================
   Archive Styling
 ===========================================*/
-#archive_title, #search_title {
+#archive_title,
+#search_title {
   background: #ea1a70;
   padding: 15px;
   margin-bottom: 20px;
 }
-#archive_title h1, #search_title h1 {
+#archive_title h1,
+#search_title h1 {
   color: #fff;
   font-size: 20px;
   margin-bottom: 0;
+}
+/*===========================================
+  404 Area Styling
+===========================================*/
+.error_page {
+  padding: 50px 0;
+  text-align: center;
+}
+.error_page h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.error_page p {
+  color: #ea1a70;
+  margin-bottom: 0;
+}
+.error_page a.homepage {
+  background: #ea1a70;
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.error_page a.homepage:hover {
+  background: #262626;
+}
+.error_search {
+  margin-bottom: 15px;
+}
+.error_search input[type="text"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.error_search input[type="submit"] {
+  background: #ea1a70;
+  border: 1px solid #ea1a70;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.error_search input[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
 }
 /*===========================================
   Sibebar Area Styling
