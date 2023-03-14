@@ -75,5 +75,26 @@ function atik_customizar_register($wp_customize)
         'section' => 'atik_colors',
         'settings' => 'atik_bg_color',
     )));
+
+    $wp_customize->add_setting('atik_primary_color', array(
+        'default' => '#ea1a70',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'atik_primary_color', array(
+        'label' => 'Primary Color',
+        'section' => 'atik_colors',
+        'settings' => 'atik_primary_color',
+    )));
 }
 add_action('customize_register', 'atik_customizar_register');
+
+function atik_theme_color_cus()
+{
+    ?>
+    <style>
+        body{background: <?php echo get_theme_mod('atik_bg_color'); ?>}
+        :root{ --pink: <?php echo get_theme_mod('atik_primary_color'); ?>}
+    </style>
+    <?php
+}
+add_action('wp_head', 'atik_theme_color_cus');
