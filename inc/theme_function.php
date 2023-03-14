@@ -59,5 +59,21 @@ function atik_customizar_register($wp_customize)
          'setting'       => 'atik_copyright_section',
          'section'       => 'atik_footer_option',
      ));
+     
+    # Theme Color
+    $wp_customize->add_section('atik_colors', array(
+        'title' => __('Theme Color', 'all-in-one'),
+        'description' => 'If you need can change your theme color.',
+    ));
+
+    $wp_customize->add_setting('atik_bg_color', array(
+        'default' => '#ffffff',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'atik_bg_color', array(
+        'label' => 'Backgroud Color',
+        'section' => 'atik_colors',
+        'settings' => 'atik_bg_color',
+    )));
 }
 add_action('customize_register', 'atik_customizar_register');

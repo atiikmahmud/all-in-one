@@ -11,7 +11,7 @@ get_header();
       <div class="row">
         <div class="col-md-12 error_page">
             <p class="h2 mb-3">404 Error - Page not Found</p>
-            <h1>Oops! Looks Like something was wrong</h1>
+            <h1>Oops! Looks Like something was wrong.</h1>
             <div class="error_search">
                 <?php get_search_form(); ?>
             </div>
