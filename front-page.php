@@ -17,7 +17,7 @@ get_header(); ?>
         ?>
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header h3">
                     <?php the_title(); ?>
                 </div>
                 <div class="card-body">
@@ -34,7 +34,5 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
-
 
 <?php get_footer(); ?>

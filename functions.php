@@ -21,3 +21,6 @@ include_once('inc/widgets_register.php');
 
 # Adding Custom Post
 include_once('inc/custom_post.php');
+
+# Shortcode
+include_once('inc/shortcode.php');
