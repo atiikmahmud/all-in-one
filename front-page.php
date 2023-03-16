@@ -55,4 +55,14 @@ get_header(); ?>
     </div>
   </section>
 
-<?php get_footer(); ?>
+  <div id="homepage_post">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <?php dynamic_sidebar('post_category') ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <?php get_footer(); ?>

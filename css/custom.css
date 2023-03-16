@@ -42,6 +42,14 @@ a.redmore:hover,
 input[type="submit"].submit:hover {
   background: #262626;
 }
+.button {
+  background: var(--pink);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
 /*=======================================
  Header Area Style
 ========================================*/
@@ -232,6 +240,16 @@ input[type="submit"].submit:hover {
   margin-bottom: 0;
 }
 /*===========================================
+  Slider Area Styling
+===========================================*/
+#slider_area {
+  margin: 25px 0;
+}
+#slider_area img {
+  width: 100%;
+  height: auto;
+}
+/*===========================================
   404 Area Styling
 ===========================================*/
 .error_page {
@@ -290,7 +308,8 @@ input[type="submit"].submit:hover {
 .child_sidebar {
   margin-bottom: 20px;
 }
-.child_sidebar h2 {
+.child_sidebar h2,
+.child_sidebar .wp-block-search__label {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -298,6 +317,14 @@ input[type="submit"].submit:hover {
   line-height: 1em;
   border-left: 5px solid var(--pink);
   padding-left: 10px;
+}
+#footer_area .child_sidebar .wp-block-search__inside-wrapper {
+  margin-top: 15px;
+  border: 0;
+  padding: 0;
+}
+#footer_area .child_sidebar input[type="search"] {
+  padding: 10px;
 }
 .child_sidebar input[type="search"] {
   background: #fff;
@@ -377,13 +404,33 @@ input[type="submit"].submit:hover {
 }
 
 /*===========================================
+  Homepage category Styling
+===========================================*/
+#homepage_post .child_sidebar ul {
+  text-align: center;
+}
+#homepage_post .child_sidebar ul li {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px #ddd;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+#homepage_post .child_sidebar ul li a {
+  font-size: 25px;
+  color: #262626;
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+}
+/*===========================================
   Footer Area Styling
 ===========================================*/
 #footer {
   background: #292929;
   padding: 40px 0 20px;
   color: #fff;
-  border-bottom: 1px solid #ddd;
 }
 #footer .child_sidebar ul li a {
   color: #fff;
@@ -392,7 +439,7 @@ input[type="submit"].submit:hover {
   Copyright Area Styling
 ===========================================*/
 #copyright_area {
-  background: #292929;
+  background: var(--pink);
   padding: 20px 0;
   color: #fff;
   text-align: center;
@@ -563,12 +610,16 @@ input[type="submit"].submit:hover {
   padding: 45px 0;
 }
 #service_area .child_service {
-  background: #ddd;
-  box-shadow: 0 0 10px #ddd;
+  background: #feecff;
+  box-shadow: 0 0 10px #feecff;
   padding: 15px;
   border-radius: 15px;
 }
 #service_area .child_service img {
   width: 100%;
   margin: 0 0 15px;
+}
+.child_sidebar .col-md-4 {
+  width: 100%;
+  margin-bottom: 20px;
 }
