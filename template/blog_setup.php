@@ -7,6 +7,7 @@
                   </div>
                   <div class="post_details">
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p><i class="fas fa-calendar-alt"> <?php the_date('F d,Y'); ?> <span>at</span> </i><i class="fas fa-clock"></i> <?php the_time('g:i a'); ?> </p>
                     <?php the_excerpt(); ?>
                   </div>
               </div>
