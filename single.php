@@ -24,4 +24,14 @@ get_header();
     </div>
 </section>
 
+<section id="page_info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-danger">Template: Single.php</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
